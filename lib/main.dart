@@ -1,7 +1,7 @@
 import 'core/locator.dart';
 import 'core/services/navigator_service.dart';
 import 'package:flutter/material.dart';
-import 'views/home/home_view.dart';
+import 'views/splash/splash_view.dart';
 
 void main() async {
   await LocatorInjector.setupLocator();
@@ -16,7 +16,7 @@ class MainApplication extends StatelessWidget {
     return MaterialApp(
       navigatorKey: locator<NavigatorService>().navigatorKey,
       debugShowCheckedModeBanner: false,
-      home: const HomeView(),
+      home: const SplashView(),
     );
   }
 }

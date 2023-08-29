@@ -60,13 +60,13 @@ class _HomeMobileState extends State<_HomeMobile> {
               ],
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(top: 740.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: buildPageIndicator(),
-            ),
-          )
+          // Padding(
+          //   padding: const EdgeInsets.only(top: 740.0),
+          //   child: Row(
+          //     mainAxisAlignment: MainAxisAlignment.center,
+          //     children: buildPageIndicator(),
+          //   ),
+          // )
         ],
       ),
     );
@@ -76,6 +76,8 @@ class _HomeMobileState extends State<_HomeMobile> {
     return Image.asset(
       'images/first.png',
       fit: BoxFit.fill,
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
     );
   }
 
@@ -83,6 +85,8 @@ class _HomeMobileState extends State<_HomeMobile> {
     return Image.asset(
       'images/second.png',
       fit: BoxFit.fill,
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
     );
   }
 
@@ -90,6 +94,8 @@ class _HomeMobileState extends State<_HomeMobile> {
     return Image.asset(
       'images/third.png',
       fit: BoxFit.fill,
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
     );
   }
 
@@ -97,6 +103,8 @@ class _HomeMobileState extends State<_HomeMobile> {
     return Image.asset(
       'images/fourth.png',
       fit: BoxFit.fill,
+      height: MediaQuery.of(context).size.height,
+      width: MediaQuery.of(context).size.width,
     );
   }
 
@@ -105,13 +113,15 @@ class _HomeMobileState extends State<_HomeMobile> {
       children: [
         Image.asset(
           'images/fifth.png',
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
           fit: BoxFit.fill,
         ),
         Positioned(
-          top: MediaQuery.of(context).size.height * 0.608,
-          left: MediaQuery.of(context).size.width * 0.57,
+          top: MediaQuery.of(context).size.height * 0.638,
+          left: MediaQuery.of(context).size.width * 0.45,
           child: SizedBox(
-            height: 90,
+            height: 60,
             width: 168,
             child: MaterialButton(
               onPressed: () {
@@ -123,10 +133,10 @@ class _HomeMobileState extends State<_HomeMobile> {
               highlightElevation: 0.0,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16.0)),
-              color: const Color.fromARGB(255, 112, 148, 211),
+              color: Color.fromARGB(255, 251, 252, 255),
               child: const Text(
                 'Get Started',
-                style: TextStyle(color: Colors.white, fontSize: 23),
+                style: TextStyle(color: Colors.blue, fontSize: 23),
               ),
             ),
           ),
