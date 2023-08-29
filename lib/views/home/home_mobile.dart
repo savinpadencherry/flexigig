@@ -135,7 +135,7 @@ class _HomeMobileState extends State<_HomeMobile> {
                   borderRadius: BorderRadius.circular(16.0)),
               color: Color.fromARGB(255, 251, 252, 255),
               child: const Text(
-                'Get Started',
+                'Get Started ',
                 style: TextStyle(color: Colors.blue, fontSize: 23),
               ),
             ),
